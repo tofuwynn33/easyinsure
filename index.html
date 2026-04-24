@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIA - ยืนงง ในดงประกัน</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .font-sarabun {
+            font-family: 'Sarabun', sans-serif;
+        }
+        .aia-red { color: #D31145; }
+        .bg-aia-red { background-color: #D31145; }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-aia-red rounded-lg flex items-center justify-center text-white font-bold text-xl">A</div>
+                <span class="text-xl font-semibold tracking-tight">AIA <span class="font-light text-slate-400">Consultant</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#services" class="hover:text-red-600 transition">ประเภทประกัน</a>
+                <a href="#articles" class="hover:text-red-600 transition">บทความ</a>
+                <a href="#" class="hover:text-red-600 transition">ติดต่อเรา</a>
+            </div>
+            <button class="bg-slate-900 text-white px-5 py-2 rounded-full text-sm hover:bg-slate-800 transition">
+                ปรึกษาฟรี
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative overflow-hidden pt-20 pb-32">
+        <div class="max-w-6xl mx-auto px-6 text-center relative z-10">
+            <h1 class="text-5xl md:text-7xl font-semibold mb-6 tracking-tight">
+                ยืนงง ในดง<span class="text-red-600">ประกัน</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-500 mb-10 max-w-2xl mx-auto font-sarabun">
+                เราเข้าใจว่าเรื่องประกันมันซับซ้อน AIA พร้อมช่วยย่อยข้อมูลให้เข้าใจง่าย <br class="hidden md:block"> เพื่อแผนชีวิตที่เหมาะสมกับคุณที่สุด
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                <a href="#services" class="w-full md:w-auto bg-aia-red text-white px-8 py-4 rounded-2xl text-lg font-medium hover:shadow-lg transition flex items-center justify-center">
+                    เริ่มเช็คแผนประกัน <i data-lucide="arrow-right" class="ml-2 w-5 h-5"></i>
+                </a>
+                <a href="#articles" class="w-full md:w-auto bg-white border border-slate-200 text-slate-600 px-8 py-4 rounded-2xl text-lg font-medium hover:bg-slate-50 transition">
+                    อ่านกระทู้ยอดฮิต
+                </a>
+            </div>
+        </div>
+        <!-- Decorative background -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-red-50 rounded-full blur-3xl opacity-50 -z-10"></div>
+    </header>
+
+    <!-- Insurance Categories -->
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-16">
+                <h2 class="text-3xl font-semibold mb-4 text-center">เลือกประกันที่ "ใช่" สำหรับคุณ</h2>
+                <div class="w-20 h-1 bg-aia-red mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Accident -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 card-hover">
+                    <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="shield-alert"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-slate-800">ประกันอุบัติเหตุ</h3>
+                    <p class="text-slate-500 font-sarabun text-sm leading-relaxed mb-6">คุ้มครองเหตุไม่คาดฝัน 24 ชั่วโมง ทั่วโลก ไม่ต้องสำรองจ่ายเมื่อเข้าโรงพยาบาลในเครือ</p>
+                    <button class="text-red-600 font-medium text-sm flex items-center hover:underline">
+                        ดูรายละเอียด <i data-lucide="chevron-right" class="ml-1 w-4 h-4"></i>
+                    </button>
+                </div>
+
+                <!-- Savings -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 card-hover">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="piggy-bank"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-slate-800">ประกันเงินออม</h3>
+                    <p class="text-slate-500 font-sarabun text-sm leading-relaxed mb-6">วางแผนอนาคตอย่างมั่นคง มีเงินคืนทุกปี พร้อมสิทธิประโยชน์ทางภาษีสูงสุด 100,000 บาท</p>
+                    <button class="text-red-600 font-medium text-sm flex items-center hover:underline">
+                        ดูรายละเอียด <i data-lucide="chevron-right" class="ml-1 w-4 h-4"></i>
+                    </button>
+                </div>
+
+                <!-- Health -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 card-hover border-2 border-red-100 shadow-sm relative">
+                    <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-red-600 text-white text-[10px] px-3 py-1 rounded-full uppercase tracking-widest font-bold">ยอดฮิต</span>
+                    <div class="w-12 h-12 bg-red-100 text-red-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-slate-800">ประกันสุขภาพ</h3>
+                    <p class="text-slate-500 font-sarabun text-sm leading-relaxed mb-6">เหมาจ่ายค่ารักษาพยาบาล ครอบคลุมทั้งโรคทั่วไปและโรคร้ายแรง เจ็บป่วยแค่ไหนก็อุ่นใจ</p>
+                    <button class="text-red-600 font-medium text-sm flex items-center hover:underline">
+                        ดูรายละเอียด <i data-lucide="chevron-right" class="ml-1 w-4 h-4"></i>
+                    </button>
+                </div>
+
+                <!-- Kids -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 card-hover">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="baby"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-slate-800">ประกันเด็กเล็ก</h3>
+                    <p class="text-slate-500 font-sarabun text-sm leading-relaxed mb-6">ดูแลลูกน้อยที่คุณรัก ตั้งแต่ก้าวแรก ครอบคลุมทั้งค่าห้องและค่ารักษาพยาบาลเด็ก</p>
+                    <button class="text-red-600 font-medium text-sm flex items-center hover:underline">
+                        ดูรายละเอียด <i data-lucide="chevron-right" class="ml-1 w-4 h-4"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section (Simulated Forum Style) -->
+    <section id="articles" class="py-24">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-semibold mb-12 flex items-center">
+                <i data-lucide="message-square" class="mr-3 text-red-600"></i> กระทู้น่าสนใจ
+            </h2>
+
+            <div class="space-y-6">
+                <!-- Article 1 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 hover:border-red-200 transition group cursor-pointer">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <span class="text-xs font-bold text-red-500 uppercase tracking-widest mb-2 block">ประกันสุขภาพ</span>
+                            <h3 class="text-xl font-medium mb-3 group-hover:text-red-600 transition">มือใหม่หัดทำประกันสุขภาพ เริ่มตรงไหนไม่ให้โดนแกง?</h3>
+                            <p class="text-slate-500 font-sarabun text-sm mb-4 line-clamp-2">รวบรวมวิธีอ่านกรมธรรม์แบบง่ายๆ จุดที่ต้องเช็คก่อนเซ็นชื่อ และแผนประกันที่คุ้มค่าที่สุดในปีนี้...</p>
+                            <div class="flex items-center text-xs text-slate-400 space-x-4">
+                                <span class="flex items-center"><i data-lucide="user" class="w-3 h-3 mr-1"></i> โดย AIA Specialist</span>
+                                <span class="flex items-center"><i data-lucide="calendar" class="w-3 h-3 mr-1"></i> 2 ชม. ที่แล้ว</span>
+                                <span class="flex items-center"><i data-lucide="eye" class="w-3 h-3 mr-1"></i> 1,240 views</span>
+                            </div>
+                        </div>
+                        <div class="w-24 h-24 bg-slate-100 rounded-xl flex-shrink-0 flex items-center justify-center overflow-hidden">
+                            <i data-lucide="image" class="text-slate-300"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 hover:border-red-200 transition group cursor-pointer">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <span class="text-xs font-bold text-blue-500 uppercase tracking-widest mb-2 block">ประกันเงินออม</span>
+                            <h3 class="text-xl font-medium mb-3 group-hover:text-red-600 transition">เงินเดือน 20k ออมยังไงให้ได้ทั้งเงินเก็บและลดหย่อนภาษี?</h3>
+                            <p class="text-slate-500 font-sarabun text-sm mb-4 line-clamp-2">เทคนิคการแบ่งสัดส่วนรายได้มาออมในประกันชีวิต แนะนำแผน 10/5 หรือ 15/25 อันไหนตอบโจทย์กว่ากัน...</p>
+                            <div class="flex items-center text-xs text-slate-400 space-x-4">
+                                <span class="flex items-center"><i data-lucide="user" class="w-3 h-3 mr-1"></i> โดย AIA Specialist</span>
+                                <span class="flex items-center"><i data-lucide="calendar" class="w-3 h-3 mr-1"></i> 5 ชม. ที่แล้ว</span>
+                                <span class="flex items-center"><i data-lucide="eye" class="w-3 h-3 mr-1"></i> 856 views</span>
+                            </div>
+                        </div>
+                        <div class="w-24 h-24 bg-slate-100 rounded-xl flex-shrink-0 flex items-center justify-center overflow-hidden">
+                            <i data-lucide="image" class="text-slate-300"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 hover:border-red-200 transition group cursor-pointer">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <span class="text-xs font-bold text-purple-500 uppercase tracking-widest mb-2 block">ประกันเด็กเล็ก</span>
+                            <h3 class="text-xl font-medium mb-3 group-hover:text-red-600 transition">ลูกเข้าโรงเรียนแล้ว ป่วยบ่อยมาก ทำประกันแบบไหนคุ้มสุด?</h3>
+                            <p class="text-slate-500 font-sarabun text-sm mb-4 line-clamp-2">แชร์ประสบการณ์คุณแม่มือใหม่กับการเลือกประกันสุขภาพให้เจ้าตัวเล็ก ครอบคลุมโรค RSV และไข้หวัดใหญ่...</p>
+                            <div class="flex items-center text-xs text-slate-400 space-x-4">
+                                <span class="flex items-center"><i data-lucide="user" class="w-3 h-3 mr-1"></i> โดย AIA Specialist</span>
+                                <span class="flex items-center"><i data-lucide="calendar" class="w-3 h-3 mr-1"></i> เมื่อวานนี้</span>
+                                <span class="flex items-center"><i data-lucide="eye" class="w-3 h-3 mr-1"></i> 2,100 views</span>
+                            </div>
+                        </div>
+                        <div class="w-24 h-24 bg-slate-100 rounded-xl flex-shrink-0 flex items-center justify-center overflow-hidden">
+                            <i data-lucide="image" class="text-slate-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <button class="bg-slate-100 text-slate-600 px-8 py-3 rounded-xl hover:bg-slate-200 transition font-medium">
+                    ดูบทความทั้งหมด
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-20">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div>
+                <div class="flex items-center space-x-2 mb-6">
+                    <div class="w-8 h-8 bg-white text-slate-900 rounded flex items-center justify-center font-bold">A</div>
+                    <span class="text-xl font-semibold">AIA Consultant</span>
+                </div>
+                <p class="text-slate-400 font-sarabun text-sm">
+                    เราพร้อมเป็นเพื่อนคู่คิดในทุกก้าวของชีวิต ให้คำปรึกษาด้วยใจ เข้าใจทุกเงื่อนไขประกัน
+                </p>
+            </div>
+            <div>
+                <h4 class="text-lg font-medium mb-6">เมนูทางลัด</h4>
+                <ul class="space-y-4 text-slate-400 font-sarabun text-sm">
+                    <li><a href="#" class="hover:text-white transition">หน้าแรก</a></li>
+                    <li><a href="#services" class="hover:text-white transition">ประเภทประกัน</a></li>
+                    <li><a href="#articles" class="hover:text-white transition">บทความ/กระทู้</a></li>
+                    <li><a href="#" class="hover:text-white transition">คำถามที่พบบ่อย</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-medium mb-6">ปรึกษาเราตอนนี้</h4>
+                <div class="flex space-x-4 mb-6">
+                    <a href="#" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-red-600 transition">
+                        <i data-lucide="facebook" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-green-600 transition">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-slate-700 transition">
+                        <i data-lucide="phone" class="w-5 h-5"></i>
+                    </a>
+                </div>
+                <p class="text-slate-400 font-sarabun text-sm mb-4">
+                    โทร: 02-XXX-XXXX <br>
+                    Line ID: @aiaconsultant
+                </p>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-6 pt-12 mt-12 border-t border-slate-800 text-center text-slate-500 text-xs font-sarabun">
+            &copy; 2024 AIA Personal Consultant. ข้อมูลเบื้องต้นเพื่อความเข้าใจเท่านั้น โปรดศึกษาเงื่อนไขก่อนทำประกัน
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
